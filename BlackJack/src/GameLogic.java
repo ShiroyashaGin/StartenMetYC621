@@ -17,7 +17,7 @@ public class GameLogic {
 	}
 	
 	void ResetGame() {
-		System.out.println("\n\n\n\n\n");
+		System.out.println("\n");
 		sum = 0;
 		currentCards.clear();
 		bankCurrentCards.clear();
@@ -48,6 +48,7 @@ public class GameLogic {
 		sc.reset();
 		if(TotalValue(currentCards) > 21) {
 			System.out.println("You went over 21 with a total of " + TotalValue(currentCards) + "\n Game Over");
+			System.out.println("----------------------------------------------------------");
 			ResetGame();
 			return;
 		}
